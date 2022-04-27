@@ -1,0 +1,17 @@
+template:
+  package: preferably
+
+name: "TmS"
+navbar:
+  title: "TmS"
+  type: inverse
+  left:
+    - text: "Tutorial"
+      href: articles/TmS.html
+    - text: "Data"
+      href: articles/data.html
+
+  right:
+    - text: GitHub
+      icon: fab fa-gitlab fa-lg
+      href: https://github.com/wwylab/TmS

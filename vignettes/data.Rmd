@@ -1,0 +1,146 @@
+---
+title: "Data"
+date: "4/26/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Here, we provide the download links of estimated tumor-specific total RNA expression proportion ($\pi$), TmS, and intrinsic signature genes for each cancer type from TCGA, EOPC, METABRIC and TRACERx cohorts, as described in our paper [1].
+
+The links in the **TmS summary** column provide text files named ``TmS summary.csv``; each file includes the following columns for the corresponding cancer type:
+- Sample ID
+- $\pi$ estimate: estimated tumor-specific total RNA expression proportion
+- (1-$\rho$)/($\rho$*$\psi$): for TCGA, this is derived by consensus $TmS / [2\pi/(1-\pi)]$. See [Tutorial page](TmS.html) for details about **Consensus TmS estimation**
+- TmS
+
+The links in the **Intrinsic tumor signature genes** column provide text files named ``Intrinsic_signature_genes.txt``; each includes the signature genes that are ranked by the gene selection scores for the corresponding cancer type [2, 3]. 
+
+<table>
+    <thead>
+        <tr>
+            <th>Cohort</th>
+            <th>Cancer type</th>
+            <th>TmS summary</th>
+            <th>Intrinsic tumor signature genes</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=15>TCGA</td>
+            <td >BLCA</td>
+            <td><a href="./etc/TmS/TCGA/BLCA/TmS%20summary.csv">link</a></td>
+            <td><a href="./etc/TmS/TCGA/BLCA/Intrinsic_signature_genes.txt">link</a> </td>
+        </tr>
+        <tr>
+            <td >BRCA</td>
+            <td><a href="./etc/TmS/TCGA/BRCA/TmS%20summary.csv">link</a></td>
+            <td><a href="./etc/TmS/TCGA/BRCA/Intrinsic_signature_genes.txt">link</a> </td>
+        </tr>
+        <tr>
+            <td >CRC</td>
+            <td><a href="./etc/TmS/TCGA/CRC/TmS%20summary.csv">link</a></td>
+            <td><a href="./etc/TmS/TCGA/CRC/Intrinsic_signature_genes.txt">link</a> </td>
+        </tr>
+        <tr>
+            <td >HNSC</td>
+            <td><a href="./etc/TmS/TCGA/HNSC/TmS%20summary.csv">link</a></td>
+            <td><a href="./etc/TmS/TCGA/HNSC/Intrinsic_signature_genes.txt">link</a> </td>
+        </tr>
+        <tr>
+            <td >KICH</td>
+            <td><a href="./etc/TmS/TCGA/KICH/TmS%20summary.csv">link</a></td>
+            <td><a href="./etc/TmS/TCGA/KICH/Intrinsic_signature_genes.txt">link</a> </td>
+        </tr>
+        <tr>
+            <td >KIPC</td>
+            <td><a href="./etc/TmS/TCGA/KIPC/TmS%20summary.csv">link</a></td>
+            <td><a href="./etc/TmS/TCGA/KIPC/Intrinsic_signature_genes.txt">link</a> </td>
+        </tr>
+        <tr>
+            <td >KIRP</td>
+            <td><a href="./etc/TmS/TCGA/KIRP/TmS%20summary.csv">link</a></td>
+            <td><a href="./etc/TmS/TCGA/KIRP/Intrinsic_signature_genes.txt">link</a> </td>
+        </tr>
+        <tr>
+            <td >LIHC</td>
+            <td><a href="./etc/TmS/TCGA/LIHC/TmS%20summary.csv">link</a></td>
+            <td><a href="./etc/TmS/TCGA/LIHC/Intrinsic_signature_genes.txt">link</a> </td>
+        </tr>
+        <tr>
+            <td >LUAD</td>
+            <td><a href="./etc/TmS/TCGA/LUAD/TmS%20summary.csv">link</a></td>
+            <td><a href="./etc/TmS/TCGA/LUAD/Intrinsic_signature_genes.txt">link</a> </td>
+        </tr>
+        <tr>
+            <td >LUSC</td>
+            <td><a href="./etc/TmS/TCGA/LUSC/TmS%20summary.csv">link</a></td>
+            <td><a href="./etc/TmS/TCGA/LUSC/Intrinsic_signature_genes.txt">link</a> </td>
+        </tr>
+        <tr>
+            <td >PAAD</td>
+            <td><a href="./etc/TmS/TCGA/PAAD/TmS%20summary.csv">link</a></td>
+            <td><a href="./etc/TmS/TCGA/PAAD/Intrinsic_signature_genes.txt">link</a> </td>
+        </tr>
+        <tr>
+            <td >PRAD</td>
+            <td><a href="./etc/TmS/TCGA/PRAD/TmS%20summary.csv">link</a></td>
+            <td><a href="./etc/TmS/TCGA/PRAD/Intrinsic_signature_genes.txt">link</a> </td>
+        </tr>
+        <tr>
+            <td >STAD</td>
+            <td><a href="./etc/TmS/TCGA/STAD/TmS%20summary.csv">link</a></td>
+            <td><a href="./etc/TmS/TCGA/STAD/Intrinsic_signature_genes.txt">link</a> </td>
+        </tr>
+        <tr>
+            <td >THCA</td>
+            <td><a href="./etc/TmS/TCGA/THCA/TmS%20summary.csv">link</a></td>
+            <td><a href="./etc/TmS/TCGA/THCA/Intrinsic_signature_genes.txt">link</a> </td>
+        </tr>
+        <tr>
+            <td >UCEC</td>
+            <td><a href="./etc/TmS/TCGA/UCEC/TmS%20summary.csv">link</a></td>
+            <td><a href="./etc/TmS/TCGA/UCEC/Intrinsic_signature_genes.txt">link</a> </td>
+        </tr>
+
+        <tr>
+            <td >EOPC</td>
+            <td ></td>
+            <td><a href="./etc/TmS/EOPC/TmS%20summary.csv">link</a></td>
+            <td><a href="./etc/TmS/EOPC/Intrinsic_signature_genes.txt">link</a> </td>
+        </tr>
+
+        <tr>
+            <td >METABRIC</td>
+            <td ></td>
+            <td><a href="./etc/TmS/METABRIC/TmS%20summary.csv">link</a></td>
+            <td><a href="./etc/TmS/METABRIC/Intrinsic_signature_genes.txt">link</a> </td>
+        </tr>
+        <tr>
+            <td >TRACERx</td>
+            <td ></td>
+            <td><a href="./etc/TmS/TRACERx/TmS%20summary.csv">link</a></td>
+            <td><a href="./etc/TmS/TRACERx/Intrinsic_signature_genes.txt">link</a> </td>
+        </tr>
+
+    </tbody>
+</table>
+
+**Note**: EOPC, Early-Onset Prostate Cancer [4]; METABRIC, Molecular Taxonomy of Breast Cancer International Consortium [5]; TRACERx, Tracking Cancer Evolution through therapy [6]. 
+
+
+## Reference
+
+[1] Cao, S. et al. Estimation of tumor cell total mRNA expression in 6,590 cancers predicts disease progression. bioRxiv 2020.09.30.306795 (2021) doi:10.1101/2020.09.30.306795.
+
+[2] Ahn, J. et al. DeMix: Deconvolution for mixed cancer transcriptomes using raw measured data. Bioinformatics 29, 1865–1871 (2013).
+
+[3] Wang, Z. et al. Transcriptome Deconvolution of Heterogeneous Tumor Samples with Immune Infiltration. iScience 9, 451–460 (2018).
+
+[4] Gerhauser, C. et al. Molecular Evolution of Early-Onset Prostate Cancer Identifies Molecular Risk Markers and Clinical Trajectories. Cancer Cell 34, 996–1011 (2018).
+
+[5] Curtis, C. et al. The genomic and transcriptomic architecture of 2,000 breast tumours reveals novel subgroups. Nature 486, 346–352 (2012).
+
+[6] Jamal-Hanjani, M. et al. Tracking the evolution of non-small-cell lung cancer. N. Engl. J. Med. 376, 2109–2121 (2017).

@@ -1,0 +1,12 @@
+Package: TmS
+Type: Package
+Title: The TmS score calculates per cell per haploid genome tumor-specific total RNA expression levels
+Version: 1.0.0
+Author: Cao<caoshaolong@gmail.com>, Wenyi Wang <wwang7@@mdanderson.org>
+Maintainer: Shuangxi Ji<sji@mdanderson.org>
+Description: Source data and tutorial for TmS
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.3.2), ggplot2 (>= 2.2.1), knitr
+VignetteBuilder: knitr
