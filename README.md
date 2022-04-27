@@ -24,7 +24,7 @@ library(DeMixT)
 
 ### More information
 
-Please visit the [TmS resource page for tutorial and data](articles/TmS.html).
+Please visit the [TmS resource page for tutorial and data](https://wwylab.github.io/TmS/articles/TmS.html).
 
 ## Contact
 For questions or support related to the inquiries of TmS, please contact Dr. Wenyi Wang (<wwang7@mdanderson.org>).
