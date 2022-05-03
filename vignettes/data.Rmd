@@ -133,7 +133,7 @@ The links in the **Intrinsic tumor signature genes** column provide text files n
 
 ## Reference
 
-[1] Cao, S. et al. Estimation of tumor cell total mRNA expression in 6,590 cancers predicts disease progression. bioRxiv 2020.09.30.306795 (2021) doi:10.1101/2020.09.30.306795.
+[1] Cao, S. et al. Estimation of tumor cell total mRNA expression in 6,590 cancers predicts disease progression. Nature Biotechnology (2022) in press.
 
 [2] Ahn, J. et al. DeMix: Deconvolution for mixed cancer transcriptomes using raw measured data. Bioinformatics 29, 1865–1871 (2013).
 

@@ -1,8 +1,8 @@
 pandoc: 2.10.1
-pkgdown: 2.0.3
+pkgdown: 1.6.1
 pkgdown_sha: ~
 articles:
   TmS: TmS.html
   data: data.html
-last_built: 2022-04-27T02:08Z
+last_built: 2022-05-03T21:32Z
 

@@ -5,21 +5,9 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Inform modern browsers that this page supports both dark and light color schemes,
-  and the page author prefers light. --><meta name="color-scheme" content="dark light">
-<script>
-  // If `prefers-color-scheme` is not supported, fall back to light mode.
-  // i.e. In this case, inject the `light` CSS before the others, with
-  // no media filter so that it will be downloaded with highest priority.
-  if (window.matchMedia("(prefers-color-scheme: dark)").media === "not all") {
-    document.documentElement.style.display = "none";
-    document.head.insertAdjacentHTML(
-      "beforeend",
-      "<link id=\"css\" rel=\"stylesheet\" href=\"https://bootswatch.com/3/flatly/bootstrap.css\" onload=\"document.documentElement.style.display = ''\">"
-    );
-  }
-</script><title>Tutorial • TmS</title>
-<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="../bootstrap-toc.css">
+<title>Tutorial • TmS</title>
+<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/flatly/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="../bootstrap-toc.css">
 <script src="../bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
@@ -28,17 +16,11 @@
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]--><!-- Flatly Theme - Light  --><link id="css-light" rel="stylesheet" href="https://bootswatch.com/3/flatly/bootstrap.css" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
-<!-- Darkly Theme - Dark --><link id="css-dark" rel="stylesheet" href="https://bootswatch.com/3/darkly/bootstrap.css" media="(prefers-color-scheme: dark)">
-<!-- preferably CSS --><link rel="stylesheet" href="../preferably.css">
-<link id="css-code-light" rel="stylesheet" href="../code-color-scheme-light.css" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
-<link id="css-code-dark" rel="stylesheet" href="../code-color-scheme-dark.css" media="(prefers-color-scheme: dark)">
+<![endif]-->
 </head>
 <body data-spy="scroll" data-target="#toc">
-    
-
     <div class="container template-article">
-      <header><div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
@@ -49,7 +31,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">TmS</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.0.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.0.0</span>
       </span>
     </div>
 
@@ -64,16 +46,12 @@
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/wwylab/TmS" class="external-link">
-    <span class="fab fa-gitlab fa-lg"></span>
+  <a href="https://github.com/wwylab/TmS">
+    <span class="fa fa-github"></span>
      
     GitHub
   </a>
 </li>
-        
-        
-
-
       </ul>
 </div>
 <!--/.nav-collapse -->
@@ -84,12 +62,12 @@
 
       
 
-      </header><div class="row">
+      </header><script src="TmS_files/header-attrs-2.14.1/header-attrs.js"></script><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
       <h1 data-toc-skip>Tutorial</h1>
             
-            <h4 data-toc-skip class="date">4/26/2022</h4>
+            <h4 class="date">4/26/2022</h4>
       
       
       <div class="hidden name"><code>TmS.Rmd</code></div>
@@ -98,7 +76,7 @@
 
     
     
-<p>We use the bulk RNAseq data generated from patients with lung adenocarcinoma (LUAD) from the TCGA study (<a href="https://portal.gdc.cancer.gov/" class="external-link">https://portal.gdc.cancer.gov/</a>) to demonstrate how to calculate TmS values. The analysis pipeline consists of the following steps:</p>
+<p>We use the bulk RNAseq data generated from patients with lung adenocarcinoma (LUAD) from the TCGA study (<a href="https://portal.gdc.cancer.gov/">https://portal.gdc.cancer.gov/</a>) to demonstrate how to calculate TmS values. The analysis pipeline consists of the following steps:</p>
 <ul>
 <li>
 <strong>Step 1</strong>: Estimate the proportion of total RNA expression (<span class="math inline">\(\pi\)</span>) from tumor cells using RNAseq data.</li>
@@ -107,26 +85,26 @@
 <li>
 <strong>Step 3</strong>: Calculate TmS, the per cell haploid genome total RNA expression for tumor, using the estimated (<span class="math inline">\(\pi\)</span>), (<span class="math inline">\(\rho\)</span>) and (<span class="math inline">\(\psi\)</span>): <span class="math inline">\(TmS=[\pi(1-\rho)2]/[(1-\pi)\rho\psi]\)</span>.</li>
 </ul>
-<div class="section level3">
-<h3 id="step-1--estimate-the-proportion-of-total-rna-expression-pi-from-tumor-cells-using-rnaseq-data-">Step 1. Estimate the proportion of total RNA expression (<span class="math inline">\(\pi\)</span>) from tumor cells using RNAseq data.<a class="anchor" aria-label="anchor" href="#step-1--estimate-the-proportion-of-total-rna-expression-pi-from-tumor-cells-using-rnaseq-data-"></a>
-</h3>
-<p>This step is achieved by using <code>DeMixT</code>, which has included a new profile likelihood approach that selects intrinsic tumor signature genes for the proportion estimation. We suggest users to visit our <code>DeMixT</code> <a href="https://wwylab.github.io/DeMixT/tutorial.html" class="external-link">tutorial page</a> for the detailed instructions on how to best estimate <span class="math inline">\(\pi\)</span>.</p>
+<div id="step-1--estimate-the-proportion-of-total-rna-expression-pi-from-tumor-cells-using-rnaseq-data-" class="section level3">
+<h3 class="hasAnchor">
+<a href="#step-1--estimate-the-proportion-of-total-rna-expression-pi-from-tumor-cells-using-rnaseq-data-" class="anchor"></a>Step 1. Estimate the proportion of total RNA expression (<span class="math inline">\(\pi\)</span>) from tumor cells using RNAseq data.</h3>
+<p>This step is achieved by using <code>DeMixT</code>, which has included a new profile likelihood approach that selects intrinsic tumor signature genes for the proportion estimation. We suggest users to visit our <code>DeMixT</code> <a href="https://wwylab.github.io/DeMixT/tutorial.html">tutorial page</a> for the detailed instructions on how to best estimate <span class="math inline">\(\pi\)</span>. In this step, we performed quality control on both the tumor and normal samples to remove any suspicious samples. Please check the code <a href="https://wwylab.github.io/DeMixT/etc/DeMixT_preprocessing.R">DeMixT_preprocessing.R</a> for details.</p>
 <p>Here, we display the estimated <span class="math inline">\(\pi\)</span> for TCGA LUAD tumor samples using the violin plot below.</p>
 <center>
 <img src="etc/Tumor_proportion_LUAD.jpg" alt="LUAD Tumor_proportion" width="150">
 </center>
 </div>
-<div class="section level3">
-<h3 id="step-2-estiamte-tumor-purity-rho-and-tumor-ploidy-psi-using-matched-dnaseq-or-snp-array-data-">Step 2: Estiamte tumor purity (<span class="math inline">\(\rho\)</span>) and tumor ploidy (<span class="math inline">\(\psi\)</span>) using matched DNAseq or SNP array data.<a class="anchor" aria-label="anchor" href="#step-2-estiamte-tumor-purity-rho-and-tumor-ploidy-psi-using-matched-dnaseq-or-snp-array-data-"></a>
-</h3>
-<p>Due to the weak identifiability of tumor ploidy (<span class="math inline">\(\psi\)</span>), we recommend using two callers, e.g., <a href="https://www.crick.ac.uk/research/labs/peter-van-loo/software" class="external-link">ASCAT</a> and <a href="https://software.broadinstitute.org/cancer/cga/absolute" class="external-link">ABSOLUTE</a>, to derive a consensus estimate [1]. See further details in <strong>Step 3</strong>.</p>
+<div id="step-2-estiamte-tumor-purity-rho-and-tumor-ploidy-psi-using-matched-dnaseq-or-snp-array-data-" class="section level3">
+<h3 class="hasAnchor">
+<a href="#step-2-estiamte-tumor-purity-rho-and-tumor-ploidy-psi-using-matched-dnaseq-or-snp-array-data-" class="anchor"></a>Step 2: Estiamte tumor purity (<span class="math inline">\(\rho\)</span>) and tumor ploidy (<span class="math inline">\(\psi\)</span>) using matched DNAseq or SNP array data.</h3>
+<p>Due to the weak identifiability of tumor ploidy (<span class="math inline">\(\psi\)</span>), we recommend using two callers, e.g., <a href="https://www.crick.ac.uk/research/labs/peter-van-loo/software">ASCAT</a> and <a href="https://software.broadinstitute.org/cancer/cga/absolute">ABSOLUTE</a>, to derive a consensus estimate [1]. See further details in <strong>Step 3</strong>.</p>
 </div>
-<div class="section level3">
-<h3 id="step-3-calculate-tms-using-the-estimated-pi-rho-and-psi-">Step 3: Calculate TmS using the estimated (<span class="math inline">\(\pi\)</span>), (<span class="math inline">\(\rho\)</span>) and (<span class="math inline">\(\psi\)</span>).<a class="anchor" aria-label="anchor" href="#step-3-calculate-tms-using-the-estimated-pi-rho-and-psi-"></a>
-</h3>
-<div class="section level4">
-<h4 id="consensus-tms-estimation">Consensus TmS estimation<a class="anchor" aria-label="anchor" href="#consensus-tms-estimation"></a>
-</h4>
+<div id="step-3-calculate-tms-using-the-estimated-pi-rho-and-psi-" class="section level3">
+<h3 class="hasAnchor">
+<a href="#step-3-calculate-tms-using-the-estimated-pi-rho-and-psi-" class="anchor"></a>Step 3: Calculate TmS using the estimated (<span class="math inline">\(\pi\)</span>), (<span class="math inline">\(\rho\)</span>) and (<span class="math inline">\(\psi\)</span>).</h3>
+<div id="consensus-tms-estimation" class="section level4">
+<h4 class="hasAnchor">
+<a href="#consensus-tms-estimation" class="anchor"></a>Consensus TmS estimation</h4>
 <p>For DNA-based deconvolution methods such as ASCAT and ABSOLUTE, there could be multiple tumor purity <span class="math inline">\(\rho\)</span> and ploidy <span class="math inline">\(\psi\)</span> pairs that have similar likelihoods. Both ASCAT and ABSOLUTE can accurately estimate the product of purity <span class="math inline">\(\rho\)</span> and ploidy <span class="math inline">\(\psi\)</span>; however, they sometimes lack power to identify and separately. TmS is derived from the product of tumor ploidy and the odds of tumor purity. Hence, it is potentially more robust to ambiguity in the tumor purity and ploidy estimation, ensuring the robustness of the TmS calculation.</p>
 <p>To calculate one final set of TmS values for a maximum number of samples, we use a consensus approach. We first calculate TmS values with tumor purity and ploidy estimates derived from both ABSOLUTE and ASCAT, and then fit a linear regression model on the log2-transformed TmS<sub>ASCAT</sub> using the log2-transformed TmS<sub>ABSOLUTE</sub> as a predictor variable. We remove samples with Cook’s distance ≥ 4/n and calculate the final <span class="math inline">\(TmS=\sqrt{TmS_{ASCAT}\times TmS_{ABSOLUTE}}\)</span>). The agreement between the two methods in ploidy values was low in 20% of TCGA samples. However, a large portion of these samples showed consistency in the TmS values using either ASCAT and ABSOLUTE, reducing the number of filtered TCGA samples to ~5% (264 samples) [1]. This result supports the robustness of our consensus approach.</p>
 <p><strong>Input</strong>: Tumor-specific total mRNA proportions, tumor purities, tumor ploidies<br><strong>Output</strong>: Consensus TmS</p>
@@ -142,40 +120,40 @@
 <li>
 <code>phi_ABSOLUTE</code>: tumor ploidy estimated by ABSOLUTE</li>
 </ul>
-<pre><code><span class="va">TmS.calculate</span> <span class="op">=</span> <span class="kw">function</span><span class="op">(</span><span class="va">p</span>, <span class="va">rho</span>, <span class="va">phi</span><span class="op">)</span><span class="op">{</span>
-  <span class="kw"><a href="https://rdrr.io/r/base/function.html" class="external-link">return</a></span><span class="op">(</span><span class="fl">2</span> <span class="op">*</span> <span class="va">p</span> <span class="op">*</span> <span class="op">(</span><span class="fl">1</span> <span class="op">-</span> <span class="va">rho</span><span class="op">)</span> <span class="op">/</span> <span class="op">(</span><span class="va">phi</span> <span class="op">*</span> <span class="va">rho</span> <span class="op">*</span> <span class="op">(</span><span class="fl">1</span> <span class="op">-</span> <span class="va">p</span><span class="op">)</span><span class="op">)</span><span class="op">)</span>
-<span class="op">}</span>
+<pre><code>TmS.calculate = function(p, rho, phi){
+  return(2 * p * (1 - rho) / (phi * rho * (1 - p)))
+}
 
-<span class="va">TmS.ASCAT</span> <span class="op">=</span> <span class="fu">TmS.calculate</span><span class="op">(</span><span class="va">p</span>, <span class="va">rho_ASCAT</span>, <span class="va">phi_ASCAT</span><span class="op">)</span>
-<span class="va">TmS.ABSOLUTE</span> <span class="op">=</span> <span class="fu">TmS.calculate</span><span class="op">(</span><span class="va">p</span>, <span class="va">rho_ABSOLUTE</span>, <span class="va">phi_ABSOLUTE</span><span class="op">)</span>
+TmS.ASCAT = TmS.calculate(p, rho_ASCAT, phi_ASCAT)
+TmS.ABSOLUTE = TmS.calculate(p, rho_ABSOLUTE, phi_ABSOLUTE)
 
-<span class="va">TmS.df</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html" class="external-link">data.frame</a></span><span class="op">(</span>TmS.ASCAT.log2 <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/Log.html" class="external-link">log2</a></span><span class="op">(</span><span class="va">TmS.ASCAT</span><span class="op">)</span>, 
-                    TmS.ABSOLUTE.log2 <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/Log.html" class="external-link">log2</a></span><span class="op">(</span><span class="va">TmS.ABSOLUTE</span><span class="op">)</span><span class="op">)</span>
+TmS.df = data.frame(TmS.ASCAT.log2 = log2(TmS.ASCAT), 
+                    TmS.ABSOLUTE.log2 = log2(TmS.ABSOLUTE))
 
-<span class="va">lm.fit</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/lm.html" class="external-link">lm</a></span><span class="op">(</span><span class="va">TmS.df</span><span class="op">$</span><span class="va">TmS.ABSOLUTE.log2</span> <span class="op">~</span> <span class="va">TmS.df</span><span class="op">$</span><span class="va">TmS.ASCAT.log2</span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">lm.fit</span><span class="op">)</span>
-<span class="va">cooksd</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/influence.measures.html" class="external-link">cooks.distance</a></span><span class="op">(</span><span class="va">lm.fit</span><span class="op">)</span>
-<span class="va">cooksd.threshold</span> <span class="op">=</span> <span class="fl">4</span> <span class="op">/</span> <span class="fu"><a href="https://rdrr.io/r/base/nrow.html" class="external-link">nrow</a></span><span class="op">(</span><span class="va">TmS.df</span><span class="op">)</span>
+lm.fit = lm(TmS.df$TmS.ABSOLUTE.log2 ~ TmS.df$TmS.ASCAT.log2)
+summary(lm.fit)
+cooksd = cooks.distance(lm.fit)
+cooksd.threshold = 4 / nrow(TmS.df)
 
-<span class="va">cook.status</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/rep.html" class="external-link">rep</a></span><span class="op">(</span><span class="st">"Accept"</span>, <span class="fu"><a href="https://rdrr.io/r/base/nrow.html" class="external-link">nrow</a></span><span class="op">(</span><span class="va">TmS.df</span><span class="op">)</span><span class="op">)</span>
-<span class="va">cook.status</span><span class="op">[</span><span class="va">cooksd</span> <span class="op">&gt;</span> <span class="va">cooksd.threshold</span><span class="op">]</span> <span class="op">=</span> <span class="st">"Outlier"</span>
-<span class="va">TmS.df</span> <span class="op">=</span> <span class="va">TmS.df</span><span class="op">[</span><span class="va">cook.status</span> <span class="op">==</span> <span class="st">"Accept"</span>, <span class="op">]</span>
+cook.status = rep("Accept", nrow(TmS.df))
+cook.status[cooksd &gt; cooksd.threshold] = "Outlier"
+TmS.df = TmS.df[cook.status == "Accept", ]
 
-<span class="va">Consensus.TmS</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/MathFun.html" class="external-link">sqrt</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/Log.html" class="external-link">exp</a></span><span class="op">(</span><span class="va">TmS.df</span><span class="op">$</span><span class="va">TmS.ASCAT.log2</span><span class="op">)</span><span class="op">*</span><span class="fu"><a href="https://rdrr.io/r/base/Log.html" class="external-link">exp</a></span><span class="op">(</span><span class="va">TmS.df</span><span class="op">$</span><span class="va">TmS.ABSOLUTE.log2</span><span class="op">)</span><span class="op">)</span></code></pre>
+Consensus.TmS = sqrt(exp(TmS.df$TmS.ASCAT.log2)*exp(TmS.df$TmS.ABSOLUTE.log2))</code></pre>
 <p>The estimated TmS values for TCGA LUAD tumor samples are shown in the violin plot below. The majority of the samples are with TmS &gt; 1, indicating a higher total mRNA expression per haploid genome in tumor cells than that of the non-tumor cells in these samples.</p>
 <center>
 <img src="etc/TmS_LUAD.png" alt="LUAD TmS" width="200">
 </center>
 </div>
 </div>
-<div class="section level2">
-<h2 id="source-code">Source code<a class="anchor" aria-label="anchor" href="#source-code"></a>
-</h2>
+<div id="source-code" class="section level2">
+<h2 class="hasAnchor">
+<a href="#source-code" class="anchor"></a>Source code</h2>
 </div>
-<div class="section level2">
-<h2 id="reference">Reference<a class="anchor" aria-label="anchor" href="#reference"></a>
-</h2>
-<p>[1] Cao, S. et al. Estimation of tumor cell total mRNA expression in 6,590 cancers predicts disease progression. bioRxiv 2020.09.30.306795 (2021) <a href="doi:10.1101/2020.09.30.306795" class="uri">doi:10.1101/2020.09.30.306795</a>.</p>
+<div id="reference" class="section level2">
+<h2 class="hasAnchor">
+<a href="#reference" class="anchor"></a>Reference</h2>
+<p>[1] Cao, S. et al. Estimation of tumor cell total mRNA expression in 6,590 cancers predicts disease progression. Nature Biotechnology (2022) in press.</p>
 </div>
   </div>
 
@@ -190,14 +168,11 @@
 
 
       <footer><div class="copyright">
-  <p></p>
-<p>Developed by Shuangxi Ji.</p>
+  <p>Developed by Shuangxi Ji.</p>
 </div>
 
 <div class="pkgdown">
-  <p></p>
-<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.3.</p>
-  <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>
@@ -205,8 +180,6 @@
 
   
 
-
-  
 
   </body>
 </html>

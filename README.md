@@ -24,11 +24,11 @@ library(DeMixT)
 
 ### More information
 
-Please visit the [TmS resource page for tutorial and data](https://wwylab.github.io/TmS/articles/TmS.html).
+Please visit the [TmS resource page for tutorial and data](articles/TmS.html).
 
 ## Contact
 For questions or support related to the inquiries of TmS, please contact Dr. Wenyi Wang (<wwang7@mdanderson.org>).
 
 ## Cite ``TmS``
 
-[1] Cao, S. et al. Estimation of tumor cell total mRNA expression in 6,590 cancers predicts disease progression. bioRxiv 2020.09.30.306795 (2021) doi:10.1101/2020.09.30.306795.
+[1] Cao, S. et al. Estimation of tumor cell total mRNA expression in 6,590 cancers predicts disease progression. Nature Biotechnology (2022) in press.

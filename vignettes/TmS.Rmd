@@ -13,7 +13,7 @@ data.
 
 ### Step 1. Estimate the proportion of total RNA expression ($\pi$) from tumor cells using RNAseq data.
 
-This step is achieved by using ``DeMixT``, which has included a new profile likelihood approach that selects intrinsic tumor signature genes for the proportion estimation. We suggest users to visit our ``DeMixT`` [tutorial page](https://wwylab.github.io/DeMixT/tutorial.html) for the detailed instructions on how to best estimate $\pi$.
+This step is achieved by using ``DeMixT``, which has included a new profile likelihood approach that selects intrinsic tumor signature genes for the proportion estimation. We suggest users to visit our ``DeMixT`` [tutorial page](https://wwylab.github.io/DeMixT/tutorial.html) for the detailed instructions on how to best estimate $\pi$. In this step, we performed quality control on both the tumor and normal samples to remove any suspicious samples. Please check the code [DeMixT_preprocessing.R](https://wwylab.github.io/DeMixT/etc/DeMixT_preprocessing.R) for details. 
 
 Here, we display the estimated $\pi$ for TCGA LUAD tumor samples using the violin plot below.
 
@@ -76,7 +76,6 @@ The estimated TmS values for TCGA LUAD tumor samples are shown in the violin plo
 ## Source code
 
  
-
 ## Reference
 
-[1] Cao, S. et al. Estimation of tumor cell total mRNA expression in 6,590 cancers predicts disease progression. bioRxiv 2020.09.30.306795 (2021) doi:10.1101/2020.09.30.306795.
+[1] Cao, S. et al. Estimation of tumor cell total mRNA expression in 6,590 cancers predicts disease progression. Nature Biotechnology (2022) in press.
