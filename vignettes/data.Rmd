@@ -31,98 +31,98 @@ The links in the **Intrinsic tumor signature genes** column provide text files n
         <tr>
             <td rowspan=15>TCGA</td>
             <td >BLCA</td>
-            <td><a href="./etc/TmS/TCGA/BLCA/TmS%20summary.csv">link</a></td>
-            <td><a href="./etc/TmS/TCGA/BLCA/Intrinsic_signature_genes.txt">link</a> </td>
+            <td><a href="./etc/TmS/TCGA/BLCA/BLCA_TmS_summary.csv">link</a></td>
+            <td><a href="./etc/TmS/TCGA/BLCA/BLCA_Intrinsic_signature_genes.txt">link</a> </td>
         </tr>
         <tr>
             <td >BRCA</td>
-            <td><a href="./etc/TmS/TCGA/BRCA/TmS%20summary.csv">link</a></td>
-            <td><a href="./etc/TmS/TCGA/BRCA/Intrinsic_signature_genes.txt">link</a> </td>
+            <td><a href="./etc/TmS/TCGA/BRCA/BRCA_TmS_summary.csv">link</a></td>
+            <td><a href="./etc/TmS/TCGA/BRCA/BRCA_Intrinsic_signature_genes.txt">link</a> </td>
         </tr>
         <tr>
             <td >CRC</td>
-            <td><a href="./etc/TmS/TCGA/CRC/TmS%20summary.csv">link</a></td>
-            <td><a href="./etc/TmS/TCGA/CRC/Intrinsic_signature_genes.txt">link</a> </td>
+            <td><a href="./etc/TmS/TCGA/CRC/CRC_TmS_summary.csv">link</a></td>
+            <td><a href="./etc/TmS/TCGA/CRC/CRC_Intrinsic_signature_genes.txt">link</a> </td>
         </tr>
         <tr>
             <td >HNSC</td>
-            <td><a href="./etc/TmS/TCGA/HNSC/TmS%20summary.csv">link</a></td>
-            <td><a href="./etc/TmS/TCGA/HNSC/Intrinsic_signature_genes.txt">link</a> </td>
+            <td><a href="./etc/TmS/TCGA/HNSC/HNSC_TmS_summary.csv">link</a></td>
+            <td><a href="./etc/TmS/TCGA/HNSC/HNSC_Intrinsic_signature_genes.txt">link</a> </td>
         </tr>
         <tr>
             <td >KICH</td>
-            <td><a href="./etc/TmS/TCGA/KICH/TmS%20summary.csv">link</a></td>
-            <td><a href="./etc/TmS/TCGA/KICH/Intrinsic_signature_genes.txt">link</a> </td>
+            <td><a href="./etc/TmS/TCGA/KICH/KICH_TmS_summary.csv">link</a></td>
+            <td><a href="./etc/TmS/TCGA/KICH/KICH_Intrinsic_signature_genes.txt">link</a> </td>
         </tr>
         <tr>
-            <td >KIPC</td>
-            <td><a href="./etc/TmS/TCGA/KIPC/TmS%20summary.csv">link</a></td>
-            <td><a href="./etc/TmS/TCGA/KIPC/Intrinsic_signature_genes.txt">link</a> </td>
+            <td >KIRC</td>
+            <td><a href="./etc/TmS/TCGA/KIRC/KIRC_TmS_summary.csv">link</a></td>
+            <td><a href="./etc/TmS/TCGA/KIRC/KIRC_Intrinsic_signature_genes.txt">link</a> </td>
         </tr>
         <tr>
             <td >KIRP</td>
-            <td><a href="./etc/TmS/TCGA/KIRP/TmS%20summary.csv">link</a></td>
-            <td><a href="./etc/TmS/TCGA/KIRP/Intrinsic_signature_genes.txt">link</a> </td>
+            <td><a href="./etc/TmS/TCGA/KIRP/KIRP_TmS_summary.csv">link</a></td>
+            <td><a href="./etc/TmS/TCGA/KIRP/KIRP_Intrinsic_signature_genes.txt">link</a> </td>
         </tr>
         <tr>
             <td >LIHC</td>
-            <td><a href="./etc/TmS/TCGA/LIHC/TmS%20summary.csv">link</a></td>
-            <td><a href="./etc/TmS/TCGA/LIHC/Intrinsic_signature_genes.txt">link</a> </td>
+            <td><a href="./etc/TmS/TCGA/LIHC/LIHC_TmS_summary.csv">link</a></td>
+            <td><a href="./etc/TmS/TCGA/LIHC/LIHC_Intrinsic_signature_genes.txt">link</a> </td>
         </tr>
         <tr>
             <td >LUAD</td>
-            <td><a href="./etc/TmS/TCGA/LUAD/TmS%20summary.csv">link</a></td>
-            <td><a href="./etc/TmS/TCGA/LUAD/Intrinsic_signature_genes.txt">link</a> </td>
+            <td><a href="./etc/TmS/TCGA/LUAD/LUAD_TmS_summary.csv">link</a></td>
+            <td><a href="./etc/TmS/TCGA/LUAD/LUAD_Intrinsic_signature_genes.txt">link</a> </td>
         </tr>
         <tr>
             <td >LUSC</td>
-            <td><a href="./etc/TmS/TCGA/LUSC/TmS%20summary.csv">link</a></td>
-            <td><a href="./etc/TmS/TCGA/LUSC/Intrinsic_signature_genes.txt">link</a> </td>
+            <td><a href="./etc/TmS/TCGA/LUSC/LUSC_TmS_summary.csv">link</a></td>
+            <td><a href="./etc/TmS/TCGA/LUSC/LUSC_Intrinsic_signature_genes.txt">link</a> </td>
         </tr>
         <tr>
             <td >PAAD</td>
-            <td><a href="./etc/TmS/TCGA/PAAD/TmS%20summary.csv">link</a></td>
-            <td><a href="./etc/TmS/TCGA/PAAD/Intrinsic_signature_genes.txt">link</a> </td>
+            <td><a href="./etc/TmS/TCGA/PAAD/PAAD_TmS_summary.csv">link</a></td>
+            <td><a href="./etc/TmS/TCGA/PAAD/PAAD_Intrinsic_signature_genes.txt">link</a> </td>
         </tr>
         <tr>
             <td >PRAD</td>
-            <td><a href="./etc/TmS/TCGA/PRAD/TmS%20summary.csv">link</a></td>
-            <td><a href="./etc/TmS/TCGA/PRAD/Intrinsic_signature_genes.txt">link</a> </td>
+            <td><a href="./etc/TmS/TCGA/PRAD/PRAD_TmS_summary.csv">link</a></td>
+            <td><a href="./etc/TmS/TCGA/PRAD/PRAD_Intrinsic_signature_genes.txt">link</a> </td>
         </tr>
         <tr>
             <td >STAD</td>
-            <td><a href="./etc/TmS/TCGA/STAD/TmS%20summary.csv">link</a></td>
-            <td><a href="./etc/TmS/TCGA/STAD/Intrinsic_signature_genes.txt">link</a> </td>
+            <td><a href="./etc/TmS/TCGA/STAD/STAD_TmS_summary.csv">link</a></td>
+            <td><a href="./etc/TmS/TCGA/STAD/STAD_Intrinsic_signature_genes.txt">link</a> </td>
         </tr>
         <tr>
             <td >THCA</td>
-            <td><a href="./etc/TmS/TCGA/THCA/TmS%20summary.csv">link</a></td>
-            <td><a href="./etc/TmS/TCGA/THCA/Intrinsic_signature_genes.txt">link</a> </td>
+            <td><a href="./etc/TmS/TCGA/THCA/THCA_TmS_summary.csv">link</a></td>
+            <td><a href="./etc/TmS/TCGA/THCA/THCA_Intrinsic_signature_genes.txt">link</a> </td>
         </tr>
         <tr>
             <td >UCEC</td>
-            <td><a href="./etc/TmS/TCGA/UCEC/TmS%20summary.csv">link</a></td>
-            <td><a href="./etc/TmS/TCGA/UCEC/Intrinsic_signature_genes.txt">link</a> </td>
+            <td><a href="./etc/TmS/TCGA/UCEC/UCEC_TmS_summary.csv">link</a></td>
+            <td><a href="./etc/TmS/TCGA/UCEC/UCEC_Intrinsic_signature_genes.txt">link</a> </td>
         </tr>
 
         <tr>
             <td >EOPC</td>
             <td ></td>
-            <td><a href="./etc/TmS/EOPC/TmS%20summary.csv">link</a></td>
-            <td><a href="./etc/TmS/EOPC/Intrinsic_signature_genes.txt">link</a> </td>
+            <td><a href="./etc/TmS/EOPC/EOPC_TmS_summary.csv">link</a></td>
+            <td><a href="./etc/TmS/EOPC/EOPC_Intrinsic_signature_genes.txt">link</a> </td>
         </tr>
 
         <tr>
             <td >METABRIC</td>
             <td ></td>
-            <td><a href="./etc/TmS/METABRIC/TmS%20summary.csv">link</a></td>
-            <td><a href="./etc/TmS/METABRIC/Intrinsic_signature_genes.txt">link</a> </td>
+            <td><a href="./etc/TmS/METABRIC/METABRIC_TmS_summary.csv">link</a></td>
+            <td><a href="./etc/TmS/METABRIC/METABRIC_Intrinsic_signature_genes.txt">link</a> </td>
         </tr>
         <tr>
             <td >TRACERx</td>
             <td ></td>
-            <td><a href="./etc/TmS/TRACERx/TmS%20summary.csv">link</a></td>
-            <td><a href="./etc/TmS/TRACERx/Intrinsic_signature_genes.txt">link</a> </td>
+            <td><a href="./etc/TmS/TRACERx/TRACERx_TmS_summary.csv">link</a></td>
+            <td><a href="./etc/TmS/TRACERx/TRACERx_Intrinsic_signature_genes.txt">link</a> </td>
         </tr>
 
     </tbody>
@@ -133,7 +133,7 @@ The links in the **Intrinsic tumor signature genes** column provide text files n
 
 ## Reference
 
-[1] Cao, S. et al. Estimation of tumor cell total mRNA expression in 6,590 cancers predicts disease progression. Nature Biotechnology (2022) in press.
+[1] Cao, S. et al. Estimation of tumor cell total mRNA expression in 15 cancer types predicts disease progression. Nat Biotechnol (2022). https://doi.org/10.1038/s41587-022-01342-x.
 
 [2] Ahn, J. et al. DeMix: Deconvolution for mixed cancer transcriptomes using raw measured data. Bioinformatics 29, 1865–1871 (2013).
 

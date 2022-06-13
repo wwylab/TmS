@@ -31,4 +31,4 @@ For questions or support related to the inquiries of TmS, please contact Dr. Wen
 
 ## Cite ``TmS``
 
-[1] Cao, S. et al. Estimation of tumor cell total mRNA expression in 6,590 cancers predicts disease progression. Nature Biotechnology (2022) in press.
+[1] Cao, S. et al. Estimation of tumor cell total mRNA expression in 15 cancer types predicts disease progression. Nat Biotechnol (2022). https://doi.org/10.1038/s41587-022-01342-x.
