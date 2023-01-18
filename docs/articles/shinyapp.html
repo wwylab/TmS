@@ -17,6 +17,11 @@
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
+
+<link rel="stylesheet" href="sidebarstyle.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+
 </head>
 <body data-spy="scroll" data-target="#toc">
     <div class="container template-article">
@@ -44,7 +49,7 @@
   <a href="../articles/data.html">Data</a>
 </li>
 <li>
-  <a href="../articles/shinyapp.html">Explore pan-cancer correlates with TmS</a>
+  <a href="../articles/shinyapp.html">TmS Correlates Exploration</a>
 </li>
       </ul>
 <ul class="nav navbar-nav navbar-right">
@@ -62,34 +67,121 @@
 <!--/.container -->
 </div>
 <!--/.navbar -->
-
-      
-
-      </header><script src="data_files/header-attrs-2.14.1/header-attrs.js"></script><div class="row">
-  <div class="col-md-9 contents">
-    <h1 data-toc-skip>Individual gene expression levels in TCGA</h1>
-
-    <iframe height="800" width="1200" frameborder="no" src="https://bioinformatics.mdanderson.org/apps/TmS/"> </iframe>
-    
-
-  </div>
+  </header>
 
 
+  <script src="data_files/header-attrs-2.14.1/header-attrs.js"></script>
+  
+  <!-- <div class="row"> --> 
+    <!-- Explore pan-cancer correlates with TmS -->
+    <div class="row">
 
-</div>
+        <div class="col-md-9 contents", style="min-width: 1200px">
 
- <footer><div class="copyright">
+          <div class="menubtn">
+            <i class="fas fa-bars"></i>
+          </div>
+            <div class="sidebar">
+              <div class="closebtn">
+                <i class="fas fa-times"></i>
+              </div>
+
+              <div class="menu">
+                <div class="item" id="overview"><a href="#"><i class="fas fa-home"></i>  Overview</a></div>
+                <div class="item" id="analysis"><a href="#"><i class="fas fa-cogs"></i>  Analysis</a></div>
+              </div>
+            </div>
+        
+            <div class="mainc">
+              <div class="mainc_overview">
+                <div class="mainc_overview_content">
+                  <h2>Welcome to TmS Correlates Exploration</h2>
+                  <p>This website provides visualizations to explore the genomic and clinical features that correlate with TmS for both TCGA, EOPC (early-onset prostate cancer) and METABRIC (Molecular Taxonomy of Breast Cancer International Consortium). It has the following functions:</p>
+                  <ol>
+                    <li>
+                      Interactively explore the correlations between the expression of a single gene and TmS within each cancer type.
+                    </li>
+                    <li>
+                      The correlations between Hallmark pathways and intrinsic tumor signature genes in across TCGA cancers.
+                    </li>   
+                    <li>
+                      The correlations between KEGG pathways and intrinsic tumor signature genes in across TCGA cancers.
+                    </li>                
+                    <li>
+                      TmS refines prognostication on pathological stages.
+                    </li> 
+                  </ol>
+                </div>
+              </div>
+
+              <div class="mainc_analysis">
+                <h2>Explore pan-cancer correlates with TmS</h2>
+
+                <p>Select a data cohort to start. </p>
+
+
+                <iframe height="800" width="1200" frameborder="no" style="margin-left: -10px; margin-top: -15px;" src="http://127.0.0.1:6931/"> </iframe>
+              </div>
+
+
+              
+            </div>
+
+          <!-- <h1 data-toc-skip>Individual gene expression levels in TCGA</h1> -->
+            
+          </div>
+      </div>
+<!-- </div> -->
+
+ <footer>
+  <div class="copyright">
   <p>Developed by Shuangxi Ji.</p>
 </div>
 
 <div class="pkgdown">
   <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
-
       </footer>
 </div>
 
-  
+
+<script type="text/javascript">
+  $(document).ready(function(){
+
+    //jquery for expand and collapse the sidebar
+
+    $('.closebtn').click(function(){
+      $('.sidebar').addClass('active');
+      
+      $('.menubtn').css("visibility", "visible");
+      $('.mainc').css("margin-left", "0px");
+    });
+
+    $('.menubtn').click(function(){
+      $('.sidebar').removeClass('active');
+      $('.menubtn').css("visibility", "hidden");
+      $('.mainc').css("margin-left", "210px");
+    });
+
+    $('#overview').click(function(){
+      $('.mainc_overview').css("visibility", "visible");
+      $('.mainc_analysis').css("visibility", "hidden");
+      $('.mainc_analysis').css("height", "0px");
+      $('.mainc_overview').css("height", "100%");
+      $('.mainc_overview').css("margin-top", "0px");
+      $('.mainc_analysis').css("margin-top", "40px");
+    });
+
+    $('#analysis').click(function(){
+      $('.mainc_overview').css("visibility", "hidden");
+      $('.mainc_analysis').css("visibility", "visible");
+      $('.mainc_overview').css("height", "0px");
+      $('.mainc_analysis').css("height", "100%");
+      $('.mainc_analysis').css("margin-top", "40px");
+    });
+
+  });
+  </script>
 
 
   </body>

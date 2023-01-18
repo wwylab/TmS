@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.sidebar {
+  background: rgb(5, 68, 104);
+  backdrop-filter: blur(15px);
+  width: 220px;
+  height: 100vh;
+  position:fixed;
+  top: 80px;
+  left: 0;
+  margin-left: calc(50% - 600px);
+  overflow-y: auto;
+  transition: 0.3s ease;
+  transition-property: left;
+}
+
+.mainc{
+  height:100%;
+  margin-top:10px;
+  margin-right:0px;
+  margin-left: 200px;
+  overflow:hidden;
+  transition: 0.5s ease;
+}
+
+.mainc_overview{
+  border-left: 50px;
+  position: relative;
+  display: block;
+  /* height:100%; */
+  width: 100%;
+  min-height: 100vh;
+}
+
+.mainc_overview::after{
+  content: "";
+  background-image: url('etc/Wang_Lab_NatureBiotech_LANDSCAPE_01.png');
+  background-size: cover;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.mainc_overview_content{
+  margin-left: 15px;
+  margin-right: 15px;
+  height:100%;
+  color: black;
+  /* width: 100%; */
+}
+
+
+.mainc_overview_content h2{
+  color: rgb(245, 149, 4);
+}
+
+
+.mainc_analysis{
+  height:100%;
+  width: 100%;
+  visibility: hidden;
+}
+
+.mainc_analysis h2{
+  color: rgb(245, 149, 4);
+}
+
+.sidebar.active{
+  left: -100%;
+}
+
+.sidebar .menu{
+  width: 100%;
+  margin-top: 40px;
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+.sidebar .menu .item{
+  position: relative;
+  cursor: pointer;
+  padding-left: 0px;
+}
+
+.sidebar .menu .item a{
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  display: block;
+  padding: 0px 15px; 
+  line-height: 40px;
+}
+
+.sidebar .menu .item a:hover{
+  background: #4e4669;
+  transition: 0.3s ease;
+}
+
+.sidebar .menu .item a:active{
+  background: #000000;
+}
+
+.sidebar .menu .item a:focus{
+  background: #000000;
+}
+
+.sidebar .menu .item i{
+  margin-right: 15px;
+}
+
+.sidebar .menu .item a .dropdown{
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  transition: 0.3s ease;
+}
+
+
+.rotate{
+  transform: rotate(90deg);
+}
+
+.closebtn{
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  right: 0;
+  margin: 10px 25px;
+  cursor: pointer;
+}
+
+.menubtn{
+  position: absolute;
+  color: rgb(46, 41, 41);
+  font-size: 20px;
+  margin-top: 30px;
+  margin-left: -40px;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+
+@media (max-width: 900px){
+  .main h1{
+    font-size: 40px;
+    line-height: 60px;
+  }
+}
