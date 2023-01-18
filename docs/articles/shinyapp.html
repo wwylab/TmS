@@ -165,19 +165,22 @@
 
     $('#overview').click(function(){
       $('.mainc_overview').css("visibility", "visible");
+      $('.mainc_overview').css("display", "block");
       $('.mainc_analysis').css("visibility", "hidden");
       $('.mainc_analysis').css("height", "0px");
       $('.mainc_overview').css("height", "100%");
-      $('.mainc_overview').css("margin-top", "0px");
-      $('.mainc_analysis').css("margin-top", "40px");
+      $('.mainc_overview').css("margin-top", "10px");
+      $('.mainc_analysis').css("margin-top", "10px");
     });
 
     $('#analysis').click(function(){
       $('.mainc_overview').css("visibility", "hidden");
+      $('.mainc_overview').css("display", "none");
+      $('.mainc_analysis').css("display", "block");
       $('.mainc_analysis').css("visibility", "visible");
       $('.mainc_overview').css("height", "0px");
       $('.mainc_analysis').css("height", "100%");
-      $('.mainc_analysis').css("margin-top", "40px");
+      $('.mainc_analysis').css("margin-top", "10px");
     });
 
   });
